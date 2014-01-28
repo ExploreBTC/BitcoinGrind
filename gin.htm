@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Origin</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<style>
+div {background-color:#122f45;margin-left:100px;margin-right:100px;border-top-left-radius:20px;border-bottom-right-radius:20px}
+p {font-family:Arial;font-size:20px;margin-left:10px}
+a {color:#cccc99}
+li {font-family:Arial;font-size:20px;margin-left:10px;color:#FACC2E}
+</style>
+</head>
+<body bgcolor="#191919">
+
+<div style="cursor:pointer" onclick="toggle_visibility('list2');">
+<p style="color:#cccc99">What is bitcoin?</p>
+<p style="color:#FACC2E">
+Bitcoin is a form of currency widely used on the internet. It relies on modern cryptography and has no central authority; all payments are processed by the users. It has a level of anonymity not seen in conventional forms of banking. It also requires almost no setup. Click to learn more.
+</p>
+</div>
+<div id="list2" class="alist" style="display:none;cursor:pointer" onclick="toggle_visibility('list1');">
+<center><iframe src="http://player.vimeo.com/video/63502573" width="500" height="281" style="border-width:10px;border-style:solid;border-color:#122f45;"></iframe></center>
+</div>
+
+
+<div>
+<p style="color:#cccc99">How do I get started?</p>
+<p style="color:#FACC2E">
+To set up a bitcoin wallet, simply go to <a href="https://coinbase.com/?r=52baf40412873a5222000044&utm_campaign=user-referral&src=referral-link">CoinBase</a> and sign up.<br />
+There are more alternatives <a href="http://explorebtc.netne.net/2.htm">here</a>.
+</p>
+</div>
+
+<div>
+<p style="color:#cccc99">How do I use this site?</p>
+<p style="color:#FACC2E">
+Bitcoin faucets are the easiest ways to get started with bitcoin. A faucet is a website that can give you up to a couple of cents worth of bitcoin. This site simply binds them together to make them easy to access.<br />
+Just enter your bitcoin address, and complete the captcha, and they will be added to a temporary account waiting to be withdrawn. Once you are done, click the <span style="border:solid;border-width:1px;border-color:#cccc99;color:#cccc99">NEXT SITE</span> at the top bar to go to the next faucet.
+</p>
+</div>
+
+<div style="background-color:#25313c">
+<p style="color:#cccc99">Observe that:</p>
+<ul>
+<li>You can click bitcoin symbol to enter your bitcoin address for automatic fill-ins on supported sites.</li>
+<li>The vertical bar next to <span style="border:solid;border-width:1px;border-color:#cccc99;color:#cccc99">NEXT SITE</span> sends you to the previous page.</li>
+<li>The <span style="border:solid;border-width:1px;border-color:#cccc99;color:#cccc99">JUMP</span> button can be used for skipping a large number of faucets.</li>
+<li>Broken faucets are removed within two weeks.</li>
+</ul>
+</div>
+
+<div style="background-color:#862200">
+<p style="color:#FACC2E;font-size:10px">We aim to provide a unique faucet rotator, flexible, open source, and with minimal advertisements. If you have any questions, suggestions, concerns, criticism, faucets, or if you just want to thank us, pop us an email at <a style="color:#cccc99" href="mailto:explorebtc@gmail.com?Subject=Feedback." target="_top">explorebtc@gmail.com</a>.</p>
+</div>
+<script>
+function toggle_visibility(id) { var list = document.getElementsByClassName("alist"); for (var i = 0; i < list.length; i++) { list[i].style.display = 'none'; } var e = document.getElementById(id); if(e.style.display == 'block') { e.style.display = 'none'; } else { e.style.display = 'block'; }}
+</script>
+</body>
+</html>

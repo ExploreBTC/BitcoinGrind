@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@-webkit-keyframes ch {
+from {background-color:#FACC2E;margin-right:600px;}
+to {background-color:#25313c;margin-right:0px;}
+}
+@keyframes ch {
+from {background-color:#FACC2E;margin-right:600;}
+to {background-color:#25313c;margin-right:0px;}
+}
+
+input {float:right;cursor:pointer;color:#25313c;background-color:#cccc99;border-color:#cccc99;border-style:solid;font-family:Impact;color:#25313c;transition: 1s}
+
+input:hover {
+background-color:#db8658
+}
+</style>
+
+<title>Bitcoins - A Grinder</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<script src="g.js" type="text/javascript"></script>
+<div style="-webkit-animation:ch 2s;animation:ch 2s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-delay:0.5s;animation-delay:0.5s">
+    <img src="coin.png" height="40px" style="margin-left:5px;margin-top:5px;margin-bottom:7px;cursor:pointer" onclick="address()"/>
+    <p style="font-family:Impact;font-size:40px;color:#cccc99;margin-left:55px;margin-top:-55px">Faucet grinder.</p>
+    <input type="button" value="JUMP" name="submit" onclick="jumpTo()" style="margin-top:-86px;margin-right:429px;font-size:30px"/>
+    <input type="button" value="LINK" name="submit" onclick="newTab()" style="margin-top:-86px;margin-right:357px;font-size:30px" />
+    <input type="button" value="RELOAD" name="submit" onclick="changeSrc()" style="margin-top:-86px;margin-right:250px;font-size:30px" />
+    <input type="button" name="submit" onclick="prev()" style="margin-top:-95px;margin-right:205px;font-size:45px" />
+    <input type="button" value="NEXT SITE" name="submit" onclick="next()" style="margin-top:-95px;margin-right:15px;font-size:45px" />
+</div>
+</head>
+<body bgcolor="#191919">
+<iframe id="fm" style="position:fixed;margin-top:-31px;width:99%;height:91%" frameborder="0" src="gin.htm"></iframe>
+</body>
+</html>

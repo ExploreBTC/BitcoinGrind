@@ -198,9 +198,6 @@ case 55:
 document.getElementById("fm").src="http://microfaucet.microwallet.org";
 break;
 case 56:
-document.getElementById("fm").src="http://www.infinityfaucet.com/micro.php";
-break;
-case 57:
 document.getElementById("fm").src="http://www.minifrij.pw";
 break;
 }

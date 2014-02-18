@@ -1,4 +1,4 @@
-var adr,x=0,c = 57;
+var adr,x=0,c = 56;
 function address() {
 adr=prompt('Enter your bitcoin address:');
 }

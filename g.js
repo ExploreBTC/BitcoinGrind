@@ -1,6 +1,78 @@
-var adr,x=0,c = 56;
+var s=[
+"gin.htm",
+"http://freebitco.in/?r=135139",
+"http://dailybitcoins.org/index.php?aff=9fb5ef25df8f3dc11cbf6a7c967d235d",
+"http://bitcoinfaucet.tk/?ref=1McYLx1YbnUZ5fRPw5Y24PBBQVutf89U6m",
+"http://www.bitcoins4.me/",
+"http://bitcoiner.net/",
+"http://www.btcflow.net/",
+"http://hotswap.co/?id=369693",
+"http://mmoclub.com/faucet",
+"http://bithunter.info/?id=28050",
+"http://btcfaucet.net/?id=92810",
+"http://www.minifrij.pw",
+"http://megabitcoinfaucet.com/?id=2227",
+"http://www.8coin.me/?r=7T8dOw&a=",
+"http://www.bbitcoin.me/?r=7T8dOw&a=",
+"http://www.bitcoinfaucet.me/?r=7T8dOw&a=",
+"http://www.bitcurl.me/?r=7T8dOw&a=",
+"http://www.btcalot.com/?r=7T8dOw&a=",
+"http://www.btcrew.com/?r=7T8dOw&a=",
+"http://www.coinpearl.me/?r=7T8dOw&a=",
+"http://www.earnbtc.me/?r=7T8dOw&a=",
+"http://www.earn-free-bitcoins.com/?r=7T8dOw&a=",
+"http://www.freebitcoinsfast.com/?r=7T8dOw&a=",
+"http://www.freebitcoin.mobi/?r=7T8dOw&a=",
+"http://www.freebitcoin.ws/?r=7T8dOw&a=",
+"http://www.freecoinbit.com/?r=7T8dOw&a=",
+"http://www.getbitcoinsquick.com/?r=7T8dOw&a=",
+"http://www.raincoins.net/?r=7T8dOw&a=",
+"http://www.smurfcoin.com/?r=7T8dOw&a=",
+"http://www.freebitcoins.me/?a=",
+"http://www.thefreebitcoins.com/?a=",
+"http://www.srbitcoin.com/?a=",
+"http://www.bitcats.net/?a=",
+"http://www.canhasbitcoin.com/?a=",
+"http://www.elbitcoingratis.es/?a=",
+"http://www.rawbitcoins.com/?a=",
+"http://www.fr33bitcoins.com/?a=",
+"http://www.bitcoins4free.me/?a=",
+"http://www.freebtc4all.com/?a=",
+"http://www.virtualfaucet.com/?a=",
+"http://www.faucetbtc.com/?a=",
+"http://www.btc4you.com/?a=",
+"http://www.nioctib.net/get-free-bitcoins/?a=",
+"http://www.btcmine.net/?a=",
+"http://www.thebitcoin.me/?a=",
+"http://www.greencoins.org/?a=",
+"http://www.bitcoinspain.net/?a=",
+"http://www.freebitcoins4u.com/?a=",
+"http://www.freebitcoinlottery.com/?a=",
+"http://multifauceted.com",
+"http://foxfaucet.com",
+"http://www.cleverpuffin.com/faucet/?id=19158",
+"http://www.rabbitcoin.tk",
+"http://www.freakfaucet.com",
+"http://www.hotbitcoins.me",
+"http://www.hotbitcoin.me",
+"http://nubtektrix.us",
+"http://bitcoinblizzard.com/faucetsplash.php",
+"http://superfaucet.com",
+"http://www.megafaucet.com",
+"http://grifobitcoin.com",
+"http://funnyfaucet.com",
+"http://bitcoinhahn.de",
+"http://faucet.galat.org",
+"http://bitcoinflood.com/faucet/",
+"http://bitfirefaucet.com",
+"http://www.bitcrate.net/index.php?ref=3665"
+];
+var adr,i,x=0,c=s.length;
 function address() {
 adr=prompt('Enter your bitcoin address:');
+s=s.map(function(x){
+  return x.indexOf("a=") != -1 ? x + adr : x; 
+});
 }
 function next(){
 x+=1;
@@ -29,180 +101,10 @@ while (i!=x) {
 }
 changeSrc();
 }
-function changeSrc()
-{
-switch (x){
-case 1:
-document.getElementById("fm").src="http://dailybitcoins.org/index.php?aff=9fb5ef25df8f3dc11cbf6a7c967d235d";
-break;
-case 2:
-document.getElementById("fm").src="http://freebitco.in/?r=135139";
-break;
-case 3:
-document.getElementById("fm").src="http://bitcoinfaucet.tk/?ref=1McYLx1YbnUZ5fRPw5Y24PBBQVutf89U6m";
-break;
-case 4:
-document.getElementById("fm").src="http://www.bitcoins4.me/";
-break;
-case 5:
-document.getElementById("fm").src="http://bitcoiner.net/";
-break;
-case 6:
-document.getElementById("fm").src="http://www.btcflow.net/";
-break;
-case 7:
-document.getElementById("fm").src="http://hotswap.co/?id=369693";
-break;
-case 8:
-document.getElementById("fm").src="http://mmoclub.com/faucet";
-break;
-case 9:
-document.getElementById("fm").src="http://dailyfreebitcoin.com/?id=226530";
-break;
-case 10:
-document.getElementById("fm").src="http://btcfaucet.net/?id=92810";
-break;
-case 11:
-document.getElementById("fm").src="http://rainbow-btcfaucet.tk/?id=499";
-break;
-case 12:
-document.getElementById("fm").src="http://megabitcoinfaucet.com/?id=2227";
-break;
-case 13:
-document.getElementById("fm").src="http://bithunter.info/?id=28050";
-break;
-case 14:
-document.getElementById("fm").src="http://www.bitcoinfreefaucet.tk/?id=103623";
-break;
-case 15:
-document.getElementById("fm").src="http://www.coinfaucet.tk/?id=85285";
-break;
-case 16:
-document.getElementById("fm").src="http://www.thefreebitcoin.tk/?id=66880";
-break;
-case 17:
-document.getElementById("fm").src="http://www.freebitcoins.me/?a=" + adr;
-break;
-case 18:
-document.getElementById("fm").src="http://www.thefreebitcoins.com/?a=" + adr;
-break;
-case 19:
-document.getElementById("fm").src="http://www.srbitcoin.com/?a=" + adr;
-break;
-case 20:
-document.getElementById("fm").src="http://www.bitcats.net/?a=" + adr;
-break;
-case 21:
-document.getElementById("fm").src="http://www.canhasbitcoin.com/?a=" + adr;
-break;
-case 22:
-document.getElementById("fm").src="http://www.elbitcoingratis.es/?a=" + adr;
-break;
-case 23:
-document.getElementById("fm").src="http://www.rawbitcoins.com/?a=" + adr;
-break;
-case 24:
-document.getElementById("fm").src="http://www.fr33bitcoins.com/?a=" + adr;
-break;
-case 25:
-document.getElementById("fm").src="http://www.bitcoins4free.me/?a=" + adr;
-break;
-case 26:
-document.getElementById("fm").src="http://www.freebtc4all.com/?a=" + adr;
-break;
-case 27:
-document.getElementById("fm").src="http://www.virtualfaucet.com/?a=" + adr;
-break;
-case 28:
-document.getElementById("fm").src="http://www.faucetbtc.com/?a=" + adr;
-break;
-case 29:
-document.getElementById("fm").src="http://www.btc4you.com/?a=" + adr;
-break;
-case 30:
-document.getElementById("fm").src="http://www.nioctib.net/get-free-bitcoins/?a=" + adr;
-break;
-case 31:
-document.getElementById("fm").src="http://www.btcmine.net/?a=" + adr;
-break;
-case 32:
-document.getElementById("fm").src="http://www.thebitcoin.me/?a=" + adr;
-break;
-case 33:
-document.getElementById("fm").src="http://www.greencoins.org/?a=" + adr;
-break;
-case 34:
-document.getElementById("fm").src="http://www.bitcoinspain.net/?a=" + adr;
-break;
-case 35:
-document.getElementById("fm").src="http://www.freebitcoins4u.com/?a=" + adr;
-break;
-case 36:
-document.getElementById("fm").src="http://www.freebitcoinlottery.com/?a=" + adr;
-break;
-case 37:
-document.getElementById("fm").src="http://multifauceted.com";
-break;
-case 38:
-document.getElementById("fm").src="http://foxfaucet.com";
-break;
-case 39:
-document.getElementById("fm").src="http://www.rabbitcoin.tk";
-break;
-case 40:
-document.getElementById("fm").src="http://www.freakfaucet.com";
-break;
-case 41:
-document.getElementById("fm").src="http://www.hotbitcoins.me";
-break;
-case 42:
-document.getElementById("fm").src="http://www.hotbitcoin.me";
-break;
-case 43:
-document.getElementById("fm").src="http://nubtektrix.us";
-break;
-case 44:
-document.getElementById("fm").src="http://bitcoinblizzard.com/faucetsplash.php";
-break;
-case 45:
-document.getElementById("fm").src="http://superfaucet.com";
-break;
-case 46:
-document.getElementById("fm").src="http://www.megafaucet.com";
-break;
-case 47:
-document.getElementById("fm").src="http://grifobitcoin.com";
-break;
-case 48:
-document.getElementById("fm").src="http://funnyfaucet.com";
-break;
-case 49:
-document.getElementById("fm").src="http://bitcoinhahn.de";
-break;
-case 50:
-document.getElementById("fm").src="http://www.bitcrate.net/index.php?ref=3665";
-break;
-case 51:
-document.getElementById("fm").src="http://faucet.galat.org";
-break;
-case 52:
-document.getElementById("fm").src="http://bitcoinflood.com/faucet/";
-break;
-case 53:
-document.getElementById("fm").src="http://www.cleverpuffin.com/faucet/?id=19158";
-break;
-case 54:
-document.getElementById("fm").src="http://bitfirefaucet.com";
-break;
-case 55:
-document.getElementById("fm").src="http://microfaucet.microwallet.org";
-break;
-case 56:
-document.getElementById("fm").src="http://www.minifrij.pw";
-break;
-}
-}
 function newTab() {
 var win=window.open(document.getElementById("fm").src, '_blank');
 win.focus();
+}
+function changeSrc() {
+document.getElementById("fm").src=s[x];
 }
